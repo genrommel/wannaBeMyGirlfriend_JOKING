@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="style.css">
+    <title>Asking for a girlfriend</title>
+</head>
+<body class="body">
+    <h1 class="cringeTitle">🤓Do you wanna be my flaca?🤓</h1>
+    <img class='mainImg'src="https://static.fandomspot.com/images/11/10388/00-featured-shrek-smiling-in-mud-bath.jpg" alt="Sherk smiling">
+    <br>
+    <button id="yeah">🔥Yeah, why not?🔥</button>
+    <button id="nel">NO! It's the biggest piece of dog shit</button>
+    
+    <script>
+        let buttonYeah = document.getElementById("yeah");
+        let buttonNel = document.getElementById("nel");
+   
+        const iWasJoking = () => {
+            alert("🥴We are together now🥴");
+            alert("💪Just a joke. Work hard!💪");
+            location.href = 'https://www.youtube.com/watch?v=MFzYXid7tUk&ab_channel=VinzontProductions';
+        };
+        const tryToSayNo = () => {
+            
+            buttonNel.style.position = 'absolute';
+            buttonNel.style.top = (Math.random() * window.innerHeight + "px");
+            buttonNel.style.left = (Math.random() * window.innerWidth + "px");
+        };
+
+        buttonYeah.addEventListener('click',iWasJoking);
+        buttonNel.addEventListener('mouseover',tryToSayNo);
+    </script>
+
+</body>
+</html>
